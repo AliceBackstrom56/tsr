@@ -29,8 +29,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-
+    
+     run: ./setup.ps1
     - uses: actions/checkout@v2
+    
     - name: Starting CRD 
 
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
