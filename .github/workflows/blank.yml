@@ -31,9 +31,6 @@ jobs:
     steps:
 
     - uses: actions/checkout@v2
-
-    - name: Initializing Setup
-
     - name: Starting CRD 
 
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
