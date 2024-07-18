@@ -34,7 +34,6 @@ jobs:
 
     - name: Initializing Setup
 
-      run: ./setup.ps1
 
     - name: Starting CRD 
 
